@@ -135,7 +135,7 @@
         bodyDiv.appendChild(footer);
         footer.style.fontSize = '0.9rem';
         footer.style.paddingBottom = '5px';
-        footer.innerHTML = (`<span><a target="blank" href="https://discord.gg/QznzysxvX4">Made by OneMinesraft2#4560</a></span>`);
+        footer.innerHTML = (`<span><a target="blank" href="https://discord.gg/QznzysxvX4">Discord - oneminesraft2</a></span>`);
     
         let cheats = ({
             global: [

@@ -154,7 +154,7 @@
                     visibility: "visible",
                     zIndex: "5",
                     height: "47px",
-                    width: "280px",
+                    width: "210px",
                     background: "var(--infoColor)",
                     boxShadow: "inset 0 -8px rgb(0 0 0 / 20%), 0 0 4px rgb(0 0 0 / 15%)",
                     borderBottomLeftRadius: "10px",
@@ -163,7 +163,7 @@
                     fontWeight: "700",
                     userSelect: "text"
                 },
-                innerHTML: "Created by OneMinesraft2#4560"
+                innerHTML: "Discord - oneminesraft2"
             }),
             (controlButtons = createElement("div", {
                 id: "controlButtons",
