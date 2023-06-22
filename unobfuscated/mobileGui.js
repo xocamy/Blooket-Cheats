@@ -436,7 +436,7 @@
                         i.remove();
                         let { props } = Object.values(document.querySelector('body div[id] > div > div'))[1].children[0]._owner.stateNode;
                         props.client.blook = prompt("Blook Name: (Case Sensitive)");;
-                        props.liveGameController.setVal({ path: `c/${stateNode.props.client.name}/b`, val: props.client.blook });
+                        props.liveGameController.setVal({ path: `c/${props.client.name}/b`, val: props.client.blook });
                     }
                 },
                 {
