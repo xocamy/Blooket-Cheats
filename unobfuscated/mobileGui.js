@@ -427,6 +427,19 @@
                     }
                 },
                 {
+                    name: "Change Blook Ingame",
+                    description: "Changes your blook",
+                    run: function () {
+                        let i = document.createElement('iframe');
+                        document.body.append(i);
+                        window.prompt = i.contentWindow.prompt.bind(window);
+                        i.remove();
+                        let { props } = Object.values(document.querySelector('body div[id] > div > div'))[1].children[0]._owner.stateNode;
+                        props.client.blook = prompt("Blook Name: (Case Sensitive)");;
+                        props.liveGameController.setVal({ path: `c/${stateNode.props.client.name}/b`, val: props.client.blook });
+                    }
+                },
+                {
                     name: "Get Daily Rewards",
                     description: "Gets max daily tokens and xp",
                     run: function () {

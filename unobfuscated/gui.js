@@ -732,6 +732,25 @@
                 }
             },
             {
+                name: "Change Blook Ingame",
+                description: "Changes your blook",
+                inputs: [
+                    {
+                        name: "Blook",
+                        type: "options",
+                        options: async () => {
+                            let { webpack } = webpackJsonp.push([[], { ['1234']: (_, a, b) => { a.webpack = b }, }, [['1234']]]);
+                            return Object.keys(Object.values(webpack.c).find(x => x.exports.a?.Chick && x.exports.a?.Elephant).exports.a);
+                        }
+                    }
+                ],
+                run: function (blook) {
+                    let { props } = Object.values(document.querySelector('body div[id] > div > div'))[1].children[0]._owner.stateNode;
+                    props.client.blook = blook;
+                    props.liveGameController.setVal({ path: `c/${stateNode.props.client.name}/b`, val: blook });
+                }
+            },
+            {
                 name: "Get Daily Rewards",
                 description: "Gets max daily tokens and xp",
                 run: function () {
