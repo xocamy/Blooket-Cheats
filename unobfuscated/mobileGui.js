@@ -450,7 +450,7 @@
                         if (!location.href.includes("play.blooket.com")) (alert("This cheat only works on play.blooket.com, opening a new tab."), window.open("https://play.blooket.com/"));
                         else {
                             var axios = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find((x) => x.exports?.a?.get).exports.a;
-                            axios.post("https://play.blooket.com/api/playersessions/solo", { gameMode: "Factory" }).then(({ data: { t } }) => {
+                            axios.post("https://play.blooket.com/api/playersessions/solo", { gameMode: "Factory", questionSetId: "60101da869e8c70013913b59" }).then(({ data: { t } }) => {
                                 axios.get("https://play.blooket.com/api/users/me").then(({ data: { name } }) => {
                                     axios.put("https://play.blooket.com/api/users/add-rewards", { t, name, addedTokens: 500, addedXp: 300 })
                                         .then(({ data: { dailyReward } }) => alert(`Added max tokens and xp, and got ${dailyReward} daily wheel tokens!`))
